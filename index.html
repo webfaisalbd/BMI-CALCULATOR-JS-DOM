@@ -9,16 +9,18 @@
   <body>
     <div class="center">
       <h1 class="title-design">BMI CALCULATOR</h1>
-      <form>
+      <div class="div">
         <div class="txt_field">
-          <input type="number" required>
+          <input type="number" required id="weightCalculate">
           <span></span>
-          <label>Weight(kg)</label>
+          <label for="weightCalculate">Weight(kg)</label>
+          
         </div>
         <div class="txt_field">
-          <input type="number" required>
+          <input type="number" required id="heightCalculate">
           <span></span>
-          <label>Height(inch)</label>
+          <label for="heightCalculate">Height(inch)</label>
+          
         </div>
         
         <div class="btn-design">
@@ -29,12 +31,12 @@
         <div class="text-design">
           <p>
             Your BMI is :
-            <span id="output">_________</span>
+            <span id="output">___</span>
           </p>
           <p id="message"></p>
         </div>
         
-      </form>
+      </div>
     </div>
 
     <script src="app.js"></script>
